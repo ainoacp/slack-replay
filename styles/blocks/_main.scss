@@ -1,0 +1,564 @@
+main{
+    min-height: 70vh;
+    width: 100%;
+    display: block;
+    font-family: $main_font;
+    border-color:$bg_color_purple;
+}
+
+.homepage{
+    background-color: $bg_color_purple;
+    border: $bg_color_purple;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.billboard-header{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 40vh;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.billboard-header__phrase1{
+    max-width: 14em;
+    padding-bottom: 15px;
+    font-size: 39px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 45px;
+}
+
+.text-yellow{
+    color: $bg-color_yellow;
+}
+
+.billboard-header__phrase2{
+    line-height: 26px;
+    font-size: 15.5px;
+    text-align: center;
+}
+
+.billboard-header__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 3rem 3rem 1.5rem 3rem;
+}
+
+.billboard-header__buttons-email{
+    background-color: white;
+    color: $bg_color_purple;
+    padding: 23px 45px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .85em;
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.billboard-header__buttons-google{
+    background-color: rgb(72, 127, 215);
+    color: white;
+    padding: 23px 45px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.85em;
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.homepage-container__video{
+    order: 2;
+    display: flex;
+    margin-bottom: -7rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.homepage__video{
+    max-height: 400px;
+    vertical-align: baseline;
+    box-sizing: inherit;
+    object-fit: contain;    
+}
+
+.companies{
+    background-color: $bg_color_beige;
+    border: $bg_color_beige;
+    padding-top: 1rem;
+    position: relative;
+    padding: 3.5rem 1rem 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-content: center;
+    align-items: center;
+    color: black;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.companies-logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25px 20px 25px;
+}
+
+.logo__item{
+    margin: 10px;
+}
+
+.team{
+    background-color: $bg_color_beige;
+    border: $bg_color_beige;
+    position: relative;
+    padding: 1rem 0.3rem 3rem 0rem;
+    color: black;
+}
+
+.team-conteiner{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.team__text{
+    padding: 1rem;
+}
+
+.team-title{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 45px;
+    letter-spacing: 1px;
+    padding: 1rem 0 1rem 0;
+}
+
+.team-text{
+    line-height: 27px;
+    font-size: 17px;
+    padding: 1rem 0 1rem 0;
+    font-weight: 400;
+}
+
+.team-link{
+    line-height: 27px;
+    font-size: 17px;
+    text-decoration: none;
+    color: $bg-color_blue;
+}
+
+.work{
+    background-color: $bg_color_beige;
+    border: $bg_color_beige;
+    position: relative;
+    padding: 2rem 0rem 3rem 0rem;
+    color: black;
+}
+
+.work-container{
+    display: grid;
+}
+
+.work-photo{
+    grid-row: 1;
+    padding-bottom: 1rem;
+    justify-self: end;
+}
+
+.work__text{
+    grid-row: 2;
+    justify-self: start;
+    font-size: 17px;
+    padding: 1rem;
+}
+
+.work-title{
+    font-size: 1.85rem;
+    font-weight: bold;
+    line-height: 45px;
+    letter-spacing: 1px;
+}
+
+.work-text{
+    line-height: 27px;
+    font-size: 17px;
+    padding: 1rem 0 1rem 0;
+    font-weight: 400;
+}
+
+.work-link{
+    line-height: 27px;
+    font-size: 17px;
+    text-decoration: none;
+    color: $bg-color_blue;
+}
+
+.agil{
+    background-color: $bg_color_beige;
+    border: $bg_color_beige;
+    position: relative;
+    padding: 1rem 0rem 1rem 0rem;
+    color: black;
+}
+
+.agil-conteiner{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.agil__text{
+    padding: 1rem;
+}
+
+.agil-title{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: .5px;
+    padding: 1rem 0 1rem 0;
+}
+
+.agil-text{
+    line-height: 27px;
+    font-size: 17.5px;
+    padding: 1rem .85rem 1rem 0;
+    font-weight: 400;
+}
+
+.agil-link{
+    line-height: 27px;
+    font-size: 17px;
+    text-decoration: none;
+    color: $bg-color_blue;
+}
+
+.slack{
+    text-align: center;
+    background-color: $bg-color_milk;
+    position: relative;
+    padding: 4rem 1rem 1rem 1rem;
+    color: black;
+}
+
+.slack__text{
+    padding: 1rem;
+}
+
+.slack-title{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0.5px;
+    padding: 1rem 0 1rem 0;
+}
+
+.slack-text{
+    line-height: 27px;
+    font-size: 17.5px;
+    padding: 0rem 0.85rem 1rem 0;
+    font-weight: 400;
+}
+
+.slack__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 3rem;
+}
+
+.slack-buttons__know{
+    background-color: $bg_color_purple;
+    color: $bg-color_milk;
+    padding: 23px 45px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .85em;
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.slack-buttons__speak{
+    background-color: $bg-color_milk;
+    color: $bg_color_purple;
+    padding: 23px 45px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .8em;
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid $bg_color_purple;
+    border-radius: 4px;
+}
+
+.slack-container__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    align-items: center;
+}
+
+.percentage{
+    display: list-item;
+    padding: 1rem 5rem;
+}
+
+.percentage-number{
+    color: $bg_color_purple;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.percentage-text{
+    font-size: .87rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: .75rem;
+}
+
+.stories{
+    background-color: $bg-color_milk;
+    position: relative;
+    padding: 1rem 0rem 1rem 0rem;
+    color: black;
+}
+
+.stories-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container__youtubeVideo{
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+    justify-items: end;
+    align-items: end;
+    align-content: space-between;
+    width: 97%;
+    padding-top: unset;
+}
+
+.stories-carousel{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-family: $main_font;
+}
+
+.customer_quote{
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.customer_author{
+    font-weight: 700;
+    font-size: .95rem;
+}
+
+.customer_title{
+    font-size: .95rem;
+    padding: .3rem 0 1rem 0;
+    line-height: 1.3rem;
+}
+
+.customer_stories{
+    line-height: 27px;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $bg-color_blue;
+}
+
+.stories-text{
+    padding: .5rem;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #696969;
+}
+
+.explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bg-color_beige;
+    position: relative;
+    padding: 3rem 1rem 1rem 1rem;
+    color: black;
+}
+
+.explore-promo{
+    text-decoration: none;
+}
+
+.explore-title{
+    text-align: center;
+    background-color: $bg-color_beige;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.18;
+}
+
+.explore-main{
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    min-height: 415px;
+    flex-direction: column;
+    align-content: center;
+    max-width: 292px;
+    position: relative;
+    box-shadow: 0 0 2rem rgba(0,0,0,.1);
+}
+
+.promo-content{
+    padding: 1rem;
+    text-decoration: none;
+    
+}
+
+.promo-content__text{
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.promo__subheading{
+    font-weight: 400;
+    font-size: .87rem;
+    color: #454245;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.promo__heading{
+    font-weight: 700;
+    letter-spacing: normal;
+    font-size: 1.25rem;
+    font-size: 1.4rem;
+    color: #000;
+    margin: .5rem 0 1rem;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.promo-functions{
+    padding: 1rem;
+    color: $bg-color_blue;
+    text-transform: uppercase;
+    font-size: .87rem;
+    font-weight: 700;
+    line-height: 1.125;
+    letter-spacing: .8px;
+}
+
+.point{
+    font-size: 100px;
+    color: rgb(183, 182, 182);
+}
+.point_purple{
+    font-size: 100px;
+    color: $bg_color_purple
+}
+
+.welcome{
+    background-color: $bg_color_purple;
+    border: $bg_color_purple;
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+    clip-path: ellipse(105% 100% at center top);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.welcome-container__title{
+    padding: 4rem .7rem 2rem .7rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.16;
+    letter-spacing: 0.8px;
+}
+
+.welcome-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 1rem;
+}
+
+.welcome-container__contact{
+    background-color: $bg_color_purple;
+    color: $bg-color_milk;
+    padding: 23px 45px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .80em;
+    font-weight: 500;
+    display: inline-block;
+    width: 75%;
+    border: 1px solid $bg-color_milk;
+    border-radius: 4px;
+}
+
+.welcome-container__signUp{
+    background-color: $bg-color_milk;
+    color: $bg_color_purple;
+    padding: 23px 45px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: .8em;
+    font-weight: 500;
+    display: inline-block;
+    width: 75%;
+    border: 1px solid $bg_color_purple;
+    border-radius: 4px;
+}

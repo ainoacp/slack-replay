@@ -1,0 +1,58 @@
+@mixin sectionPurple($bg_color_purple){
+    background-color: $bg_color_purple;
+    border: $bg_color_purple;
+    padding-top: 1rem;
+    position: relative;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+
+@mixin sectionBeige($bg_color_beige){
+    background-color: $bg_color_beige;
+    border: $bg_color_beige;
+    padding-top: 1rem;
+    position: relative;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-content: center;
+    align-items: center;
+    color: black;
+    padding-bottom: 1rem;
+}
+
+@mixin buttonElement{
+    padding: 23px 45px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.85em;
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@mixin titleElement{
+    max-width: 14em;
+    padding-bottom: 15px;
+    font-size: 39px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 45px;
+}
+
+@mixin pharseElement{
+    line-height: 26px;
+    font-size: 15.5px;
+    text-align: center;
+}

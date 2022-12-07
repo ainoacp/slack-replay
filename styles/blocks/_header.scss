@@ -1,0 +1,41 @@
+header{
+    background-color: $bg_color_purple;
+    min-height: 10vh;
+    display: block;
+    font-family: $main_font;
+}
+
+.nav{
+    width: 100%;
+    border-bottom: none;
+    position: absolute;
+    display: block;
+}
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vw;
+    height: 7vh;
+}
+
+.slack-nav-container__logo-img{
+    height: 55px;
+    width: 140px;
+}
+
+.nav-container__menu{
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+}
+.nav-menu__btn{
+   background: 0 0;
+   border: none;
+   display: inline-block;
+   text-align: center;
+   padding: 0;
+}
+.hamburguer-menu__img{
+    padding: 13px;
+}
