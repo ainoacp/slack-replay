@@ -12,11 +12,14 @@ main{
     padding-top: 1rem;
     padding-bottom: 3rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-items: start;
     align-content: center;
-    align-items: flex-start;
+    align-items: center;
     color: white;
+    flex-wrap: wrap;
+    padding: 0 4vw;
+    overflow-x: hidden;
 }
 
 .billboard-header{
@@ -27,6 +30,7 @@ main{
     margin: 10px;
     align-items: center;
     text-align: center;
+    order:1;
 }
 
 .billboard-header__phrase1{
@@ -53,7 +57,7 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 3rem 3rem 1.5rem 3rem;
+    padding: 3rem 2.5rem 1.5rem 2.5rem;
 }
 
 .billboard-header__buttons-email{
@@ -89,16 +93,22 @@ main{
 .homepage-container__video{
     order: 2;
     display: flex;
-    margin-bottom: -7rem;
+    justify-self: flex-start;
     justify-content: center;
     align-items: flex-start;
+    box-sizing: inherit;
+    min-width: 560px;
 }
 
 .homepage__video{
+    display: inline-block;
     max-height: 400px;
     vertical-align: baseline;
     box-sizing: inherit;
-    object-fit: contain;    
+    object-fit: contain;  
+    max-width: 700px;
+    height: auto;
+    margin-bottom: -7rem;
 }
 
 .companies{
@@ -372,6 +382,8 @@ main{
     align-content: space-between;
     width: 97%;
     padding-top: unset;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
 }
 
 .stories-carousel{
